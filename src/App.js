@@ -122,17 +122,17 @@ return inputLayout
 }
 const Table = (props) => {
     // console.log(this.handleRowAdd, props);
-    var inputRow = this.state.columns.map(cell => {
-        return <TableInputRow
-        key = {cell.id}
-        rows = {cell}
-        />
-    })
+    // var inputRow = this.state.columns.map((cell, i) => {
+    //     return <TableInputRow
+    //     key = {cell.id}
+    //     rows = {cell}
+    //     />
+    // })
     var rowLayout = ( <tr>
-        <td><input type = "button"  onClick = {props.onClick}value = "+" / > </td>
-        <td> {props.rows.id} </td>
+        <td><input type = "button"  onClick = {props.onClick} value = "+" / > </td>
+        {/* <td> {props.rows.id} </td> */}
         <td> {props.rows.caption} </td>
-        {inputRow}
+        {/* {inputRow} */}
       </tr>
     );
     console.log(rowLayout)
